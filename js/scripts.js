@@ -24,3 +24,33 @@ $(document).ready(function() {
     $('#output').text(result);
   });
 });
+
+$(document).ready(function() {
+  $("form#subtraction").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("input#subtract1").val());
+    var number2 = parseInt($("input#subtract2").val());
+    var result = subtract(number1, number2);
+    $('#output').text(result);
+  });
+});
+
+$(document).ready(function() {
+  $("form#division").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("input#divide1").val());
+    var number2 = parseInt($("input#divide2").val());
+    var result = divide(number1, number2);
+    $('#output').text(result);
+  });
+});
+
+$(document).ready(function() {
+  $("form#multiply").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("input#multiply1").val());
+    var number2 = parseInt($("input#multiply2").val());
+    var result = multiply(number1, number2);
+    $('#output').text(result);
+  });
+});
